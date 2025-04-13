@@ -1,0 +1,80 @@
+Question 1: Hospital Management System
+Design a system to manage records of doctors and patients in a hospital. The system should involve two classes: Doctor and Patient. A doctor can have multiple patients. Your task is to implement a solution that will maintain a list of Patient objects within the Doctor class and perform specific operations.
+
+Class Doctor:
+Attributes:
+
+doctorId (int)
+doctorName (String)
+specialization (String)
+patients (List of Patient objects)
+Class Patient:
+Attributes:
+
+patientId (int)
+patientName (String)
+illness (String)
+Methods in Doctor Class:
+getUniqueIllnesses()
+
+This method identifies and returns all unique illnesses that patients of a particular doctor are suffering from, sorted alphabetically. It takes two arguments: a list of doctor objects and doctorId. If no doctor is found, print "Doctor Not Found".
+getDoctorsBySpecialization()
+
+This method retrieves all doctors with a specific specialization and returns a list of their names. It takes two arguments: a list of doctor objects and the specialization. If no doctors are found, print "No Doctors Found".
+Sample Input 1:
+
+plaintext
+Copy code
+2
+101
+Dr. Smith
+Cardiology
+3
+201
+Alice
+Heart Disease
+202
+Bob
+Arrhythmia
+203
+Charlie
+Heart Disease
+102
+Dr. Jones
+Neurology
+2
+204
+David
+Migraine
+205
+Eve
+Seizure
+101
+Cardiology
+Sample Output 1:
+
+plaintext
+Copy code
+Arrhythmia
+Heart Disease
+Dr. Smith
+Sample Input 2:
+
+plaintext
+Copy code
+1
+103
+Dr. Adams
+Pediatrics
+1
+206
+Frank
+Asthma
+104
+Orthopedics
+Sample Output 2:
+
+plaintext
+Copy code
+Doctor Not Found
+No Doctors Found

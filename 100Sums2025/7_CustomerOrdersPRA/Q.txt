@@ -1,0 +1,66 @@
+Class Customer:
+Attributes:
+
+customerId (int)
+customerName (String)
+email (String)
+orders (List of Order objects)
+Class Order:
+Attributes:
+
+orderId (int)
+productName (String)
+quantity (int)
+Methods in Customer Class:
+getTotalOrderCount()
+
+This method calculates and returns the total number of unique orders placed by a customer. It takes two arguments: a list of customer objects and customerId. If no customer is found, print "Customer Not Found".
+getCustomersByProduct()
+
+This method retrieves all customers who have ordered a specific product and returns a list of their names. It takes two arguments: a list of customer objects and the product name. If no customers are found, print "No Customers Found".
+Sample Input 1:
+2
+201
+Alice
+alice@example.com
+2
+101
+Laptop
+1
+102
+Mouse
+2
+202
+Bob
+bob@example.com
+3
+103
+Keyboard
+1
+104
+Monitor
+2
+105
+Laptop
+1
+201
+Laptop
+Sample Output 1:
+2
+Alice
+Bob
+Sample Input 2:
+1
+203
+Charlie
+charlie@example.com
+1
+106
+Printer
+3
+201
+Tablet
+Sample Output 2:
+Customer Not Found
+No Customers Found
+*/

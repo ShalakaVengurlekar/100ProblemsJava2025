@@ -1,0 +1,70 @@
+Here’s a similar problem with a focus on a **Gym Membership Management System** using a similar structure to the "Student Course Enrollment" system you described.
+
+---
+
+### **Problem 2: Gym Membership Management**
+**Objective**: Design and implement a system to manage gym memberships and track class enrollments. The system should involve two main classes: **GymClass** and **Gym**. A Gym can have multiple GymClass objects stored in a `HashMap`, where the key is the class code and the value is a GymClass object.
+
+---
+
+### **Classes**:
+
+#### **Class GymClass**:
+**Attributes**:
+- `String classCode`: The unique code for the gym class.
+- `String className`: The name of the gym class (e.g., "Yoga", "Strength Training").
+- `String instructor`: The name of the instructor teaching the class.
+- `HashSet<String> enrolledMembers`: A set of gym member names who are enrolled in the class.
+
+#### **Class Gym**:
+**Attributes**:
+- `String gymName`: The name of the gym.
+- `HashMap<String, GymClass> gymClasses`: Stores the gym classes, where the key is the class code and the value is a `GymClass` object.
+
+**Methods**:
+- `HashSet<String> getClassesByInstructor(String instructor)`: Retrieve a `HashSet` of class names taught by a given instructor.
+- `HashSet<String> getMembersEnrolledInClass(String classCode)`: Retrieve a `HashSet` of gym member names enrolled in a given class.
+- `HashMap<String, Integer> getClassEnrollmentCount()`: Retrieve a `HashMap` where each key is a class name, and the value is the number of members enrolled.
+
+---
+
+### **Example Input**:
+
+**Gym name**: "FitLife Gym"
+
+**Gym Classes**:
+1. **ClassCode**: "Y101", **ClassName**: "Yoga", **Instructor**: "John Doe", **EnrolledMembers**: {"Emily", "Mike", "Sara"}
+2. **ClassCode**: "ST102", **ClassName**: "Strength Training", **Instructor**: "Jane Smith", **EnrolledMembers**: {"Sara", "Jake"}
+3. **ClassCode**: "Z103", **ClassName**: "Zumba", **Instructor**: "John Doe", **EnrolledMembers**: {"Emily", "Lucy", "Jake"}
+
+---
+
+### **Expected Operations**:
+
+- Retrieve all classes taught by a specific instructor, e.g., all classes taught by "John Doe".
+- Retrieve the list of gym members enrolled in a specific class, e.g., members in the "Yoga" class.
+- Retrieve a summary of classes with the number of enrolled members for each class.
+
+---
+
+### **Example Output**:
+
+```java
+// Classes taught by "John Doe":
+Classes taught by John Doe: Yoga, Zumba
+
+// Members enrolled in "Yoga" class:
+Members in Yoga class: Emily, Mike, Sara
+
+// Class enrollment count:
+Yoga: 3 members
+Strength Training: 2 members
+Zumba: 3 members
+```
+
+---
+
+### **Guidelines**:
+- Use `HashSet` to store gym members enrolled in each class to avoid duplicate enrollments.
+- Use `HashMap` to store the collection of `GymClass` objects in the `Gym`.
+- Implement the methods to retrieve classes by instructor, enrolled members, and class enrollment counts.

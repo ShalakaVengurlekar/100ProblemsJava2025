@@ -1,0 +1,66 @@
+Question 3: Library Management System with Genre
+Design a system to manage records of books and genres in a library. The system should involve two classes: Genre and Book. A genre can have multiple books. Your task is to implement a solution that will maintain a list of Book objects within the Genre class and perform specific operations.
+
+Class Genre:
+Attributes:
+
+genreId (int)
+genreName (String)
+books (Map of book ID to Book objects)
+Class Book:
+Attributes:
+
+bookId (int)
+title (String)
+authorName (String)
+Methods in Genre Class:
+getBooksByAuthor()
+
+This method retrieves and returns a list of book titles written by a specific author within a genre, sorted alphabetically. It takes three arguments: a list of genre objects, genreId, and the authorName. If no genre is found, print "Genre Not Found". If no books are found by the author, print "No Books Found".
+getGenresByBookId()
+
+This method finds all genres that contain a specific book ID and returns a list of genre names. It takes two arguments: a list of genre objects and the bookId. If no genres are found containing the book, print "No Genres Found".
+Sample Input 1:
+2
+101
+Fiction
+3
+501
+The Great Gatsby
+F. Scott Fitzgerald
+502
+1984
+George Orwell
+503
+To Kill a Mockingbird
+Harper Lee
+102
+Non-Fiction
+2
+504
+Sapiens
+Yuval Noah Harari
+505
+Educated
+Tara Westover
+101
+F. Scott Fitzgerald
+502
+Sample Output 1:
+The Great Gatsby
+Fiction
+
+Sample Input 2:
+1
+103
+Science Fiction
+1
+506
+Dune
+Frank Herbert
+507
+
+Sample Output 2:
+Genre Not Found
+No Genres Found
+*/

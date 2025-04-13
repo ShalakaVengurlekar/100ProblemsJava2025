@@ -1,0 +1,66 @@
+Problem Statement: Phone Book Management System
+You are required to implement a phone book management system that allows users to store, retrieve, and manage contacts. Each contact has a name, phone number, and email address.
+
+Class Definitions:
+Contact:
+
+Attributes:
+contactId (int): Unique ID for each contact.
+name (String): The name of the contact.
+phoneNumber (String): The phone number of the contact.
+email (String): The email address of the contact.
+PhoneBook:
+
+Contains a list of contacts and supports the following operations:
+Methods:
+searchByName():
+
+This method takes the name of the contact and searches for all contacts with a matching name (case-insensitive). If no contact is found, print "No contact found with the given name."
+Parameters:
+name (String): Name of the contact to search.
+Output:
+Returns a list of contacts with matching names or a message if no contacts are found.
+addContact():
+
+This method adds a new contact to the phone book. If a contact with the same phone number already exists, the contact is not added, and a message "Duplicate phone number found" is printed.
+Parameters:
+Contact object: Contact to be added.
+Output:
+The method prints "Contact added successfully" or "Duplicate phone number found."
+deleteContact():
+
+This method deletes a contact by the phone number. If the contact is not found, print "Contact not found."
+Parameters:
+phoneNumber (String): The phone number of the contact to be deleted.
+Output:
+The method prints "Contact deleted successfully" or "Contact not found."
+sortContactsByName():
+
+This method sorts all contacts alphabetically by their names.
+Output:
+The sorted list of contacts, with each contact's name, phone number, and email.
+Example Input:
+perl
+Copy code
+addContact(1, "Alice", "1234567890", "alice@gmail.com")
+addContact(2, "Bob", "0987654321", "bob@gmail.com")
+addContact(3, "Alice", "1122334455", "alice123@yahoo.com")
+searchByName("Alice")
+deleteContact("1234567890")
+sortContactsByName()
+Example Output:
+yaml
+Copy code
+Contact added successfully
+Contact added successfully
+Contact added successfully
+Found contacts:
+Name: Alice, Phone: 1234567890, Email: alice@gmail.com
+Name: Alice, Phone: 1122334455, Email: alice123@yahoo.com
+Contact deleted successfully
+Sorted contacts:
+Name: Alice, Phone: 1122334455, Email: alice123@yahoo.com
+Name: Bob, Phone: 0987654321, Email: bob@gmail.com
+Constraints:
+The phone number is assumed to be unique for each contact.
+The phone book can contain a maximum of 100 contacts.

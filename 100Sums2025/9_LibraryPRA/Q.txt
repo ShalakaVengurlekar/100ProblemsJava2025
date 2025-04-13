@@ -1,0 +1,96 @@
+Here’s a different scenario that still involves Java classes, methods, and collections, but in a new context:
+
+---
+
+### Problem Statement:
+
+**Library Management System**
+
+Design a `Book` class that keeps track of each book's ISBN (International Standard Book Number), title, author, and the list of reviews given by readers. Implement two methods in the `Library` class to process books:
+
+1. **booksWithAverageReviewAboveThreshold(List<Book> books, double threshold)**:
+   - This method should return a list of book titles whose average review rating is greater than the specified threshold.
+     
+     2. **booksWithMostUniqueReviewers(List<Book> books)**:
+        - This method should return a list of book titles that have been reviewed by the highest number of unique reviewers.
+          
+          Your program should:
+          - Accept input for a list of books, each having an ISBN, title, author, and multiple reviews.
+          - For each book, reviews consist of the reviewer’s name and the review rating they give (1-5).
+          - The program should then ask for a threshold value to return the list of books with an average review rating above this threshold.
+          - It should also return the list of books with the highest number of unique reviewers.
+
+          **Input**:
+          - The first line contains an integer `n`, the number of books.
+          - For each book:
+              - A string `ISBN`.
+                  - A string `title`.
+                      - A string `author`.
+                          - An integer `m` representing the number of reviews the book has received.
+                              - For the next `m` lines, a string `reviewerName` and an integer `reviewRating` (1-5).
+                              - The next line contains a double `threshold`, representing the average review threshold.
+
+                              **Output**:
+                              - List of book titles with average review ratings above the threshold.
+                              - List of book titles with the highest number of unique reviewers.
+
+                              ---
+
+                              ### Example:
+
+                              **Input**:
+                              ```
+                              3
+                              978-3-16-148410-0
+                              The Great Adventure
+                              John Smith
+                              3
+                              Alice
+                              5
+                              Bob
+                              4
+                              Alice
+                              3
+                              978-1-86197-876-9
+                              Mystery in the Night
+                              Jane Doe
+                              2
+                              Carol
+                              5
+                              Dave
+                              4
+                              978-0-14-044913-6
+                              The Art of War
+                              Sun Tzu
+                              3
+                              Eve
+                              4
+                              Alice
+                              4
+                              Frank
+                              5
+                              4.0
+                              ```
+
+                              **Output**:
+                              ```
+                              Books with average review rating above threshold:
+                              Mystery in the Night
+                              The Art of War
+
+                              Books with the most unique reviewers:
+                              The Art of War
+                              ```
+
+                              **Explanation**:
+                              - "The Great Adventure" has reviews by Alice (twice) and Bob, but only Bob's review is unique. Its average review rating is (5 + 4 + 3) / 3 = 4.0, so it’s equal to the threshold.
+                              - "Mystery in the Night" has reviews by Carol and Dave with an average of (5 + 4) / 2 = 4.5, which is above the threshold.
+                              - "The Art of War" has reviews by Eve, Alice, and Frank, with an average of (4 + 4 + 5) / 3 = 4.33, which is also above the threshold and has the most unique reviewers.
+
+                              ---
+
+                              ### Problem Focus:
+                              This problem emphasizes:
+                              - Handling a `Book` class with attributes like ISBN, title, author, and a list of reviews.
+                              - Managing collections (using `HashMap`, `List`, and `Set`).
+                              - Working with reviewer names to find unique reviewers and calculating averages.

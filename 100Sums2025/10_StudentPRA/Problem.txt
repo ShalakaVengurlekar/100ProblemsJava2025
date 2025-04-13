@@ -1,0 +1,41 @@
+Class student 
+Attributes
+Id,name,subject,grade
+Method 1 - studentswithAverageaboveThreshold - return list of students with average grade higher than average
+2. Students with maximum unique grades
+Take students list as argument for both methods
+Return studetns with maximum unique grades
+
+Imput 
+3
+101
+Abc
+2
+Physics
+78
+Maths
+99
+102
+Xyz
+3
+Chem
+80
+Maths
+80
+Physics
+73
+103
+Dfg
+4
+Physics
+67
+Chem
+67
+Maths
+67
+PRA1
+67
+70
+Output
+Abc,xyz
+Abc,xyz

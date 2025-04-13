@@ -1,0 +1,45 @@
+2. Associate - Collections
+
+Create a class Associate with the following private attributes
+
+empid-int
+
+name-String
+
+experience-int
+
+salary-double
+
+Include a constructor and required getter and setter methods.
+
+In a separate Solution class with the main method, implement the following static methods
+
+SearchAssociatesByName:
+
+This method should take collection of Associate objects and name (String) as parameters and returns a collection of Associate objects if the associates are found with the given name.
+
+If the returning collection is not empty then return collection of Associate objects or else, return null
+
+getAverage SalaryByExperience:
+
+This method should take collection of Associate objects and experience (int) as parameters and returns double value of average of employee salaries with given experience.
+
+if no associate found with the given experience, then return 0
+
+The above static methods should be called from the main method.
+
+For SearchAssociatesByName: This main method should print the collection of Associate objects (empid, name, experience, salary) if returned collection is not null or else, print "No associate found with given name.
+
+
+
+For getAverageSalaryByExperience: This main method should print the average value of salaries if returned double value is not equals to 0 or else, print "No associate found with given experience".
+
+Before calling the static methods in the main method, use the scanner object to read value for no.of
+
+Associate objects to be created, then read empid, name, experience, salary for each Associate object. Next, read one String and Integer values for capturing the name and experience of associate.
+
+Constraints:
+
+• Duplicate Associate objects are allowed and should follow insertion order.
+
+String search should be in case-insensitive

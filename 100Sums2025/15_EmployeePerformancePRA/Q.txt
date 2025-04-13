@@ -1,0 +1,89 @@
+You are tasked with designing a system to manage and
+analyze employee performance data in a company. The
+system involves two classes:
+Class Employee:
+Attributes:
+- employeeld (int)
+- employeeName (String)
+- companyName (String)
+- projectCount (int)
+- projectList (List of Project objects)
+Class Project:
+Attributes:
+- projectName (String): Name of the project.
+- rating (int): Employee Rating for that project.
+Task-1:
+Write a method that identifies and returns all unique
+ratings that an employee has received, ensuring that no
+duplicate ratings are included.
+This method takes two arguments: a list of Employees and
+employeeld as an argument and returns the distinct
+project ratings received by the employee, eliminating any
+duplicates.
+If the employeeld does not exist, the method should print
+"No Employee Found."
+Task-2:
+This method calculates the average project ratings for each
+employee and identifies those whose average is above a
+given threshold.
+This method takes two arguments: a list of Employees and
+an integer threshold.
+The method should return a list of employee names who
+have an average rating above the specified threshold.
+If no such employees exist, the method should print "No
+Employee Found."
+Note:
+You can use/refer to the below-given sample input and
+output to verify your solution.
+Write the code for accepting the inputs and printing the
+outputs. Don't use any static test or formatting for printing
+the result. Just invoke the method and print the result.
+
+Sample Input 1:
+2
+1001
+John
+Google
+3
+Search
+88
+Ads
+92
+Maps
+88
+1002
+Alice
+Amazon
+1
+AWS
+93
+1001
+88
+90
+
+Sample Output 1:
+88
+92
+John
+Alice
+
+Sample Input 2:
+2
+1001
+Raj
+TCS
+2
+Al
+80
+CRM
+85
+1002
+Meera
+Infosys
+Marketing
+75
+10001
+90
+Sample Output 2:
+No Employee Found
+No Employee Found

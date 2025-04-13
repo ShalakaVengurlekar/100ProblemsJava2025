@@ -1,0 +1,26 @@
+Problem 2: Student Course Enrollment
+Objective: Create a system to manage student course enrollments in a university. The system should involve two classes: Course and University. A University can have multiple Course objects stored in a HashMap where the key is the course code, and the value is a Course object.
+
+Classes:
+
+Class Course:
+Attributes:
+courseCode (String)
+courseName (String)
+instructor (String)
+enrolledStudents (HashSet of student names)
+Class University:
+Attributes:
+universityName (String)
+courses (HashMap of course codes to Course objects)
+Methods:
+getCoursesByInstructor(String instructor): Retrieve a HashSet of course names taught by a given instructor.
+getStudentsEnrolledInCourse(String courseCode): Retrieve a HashSet of student names enrolled in a given course.
+getCoursesWithStudentCount(): Retrieve a HashMap where each key is a course name and the value is the number of students enrolled.
+Example Input:
+
+University name: "Tech University"
+Courses:
+CourseCode: "CS101", CourseName: "Introduction to Computer Science", Instructor: "Dr. Smith", EnrolledStudents: {"Alice", "Bob", "Charlie"}
+CourseCode: "MA102", CourseName: "Calculus I", Instructor: "Dr. Jones", EnrolledStudents: {"Alice", "David"}
+CourseCode: "CS102", CourseName: "Data Structures", Instructor: "Dr. Smith", EnrolledStudents: {"Charlie", "Eve"}
