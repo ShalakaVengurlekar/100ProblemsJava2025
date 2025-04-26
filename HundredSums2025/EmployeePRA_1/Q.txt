@@ -43,27 +43,27 @@ Ex: 1003
 
     Input : 
 
-    1001
-    Ashwa
-    IT
-    5
-    true
-    1002
-    Preeti
-    IT
-    4
-    true
-    1003
-    Uma
-    Admin
-    3
-    false
-    1004
-    Akash
-    Hardware
-    4.5
-    false
-    IT
+1001
+Ashwa
+IT
+5
+true
+1002
+Preeti
+IT
+4
+true
+1003
+Uma
+Admin
+3
+false
+1004
+Akash
+Hardware
+4.5
+false
+IT
 
 
 
