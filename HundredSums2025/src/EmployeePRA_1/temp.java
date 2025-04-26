@@ -1,3 +1,5 @@
+package HundredSums2025.src.EmployeePRA_1;
+
 import java.util.Scanner;
 
 public class temp {
@@ -5,7 +7,7 @@ public class temp {
         Scanner sc = new Scanner(System.in);
         System.out.println("enter numbers");
 
-        for(i = 0; i<5; i++){
+        for( int i = 0; i<5; i++){
 
         }
     }
