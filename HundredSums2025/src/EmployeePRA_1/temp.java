@@ -10,6 +10,8 @@ public class temp {
         for( int i = 0; i<5; i++){
 
         }
+        sc.close();
+        
     }
     class temp2{
         
