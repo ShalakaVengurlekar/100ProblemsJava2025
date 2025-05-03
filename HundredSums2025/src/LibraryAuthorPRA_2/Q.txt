@@ -116,4 +116,6 @@ Sample Input 2:
 0
 1001
 American
-Sample Output 2: Author Not Found Books Not Found
+Sample Output 2: 
+Author Not Found B
+ooks Not Found
