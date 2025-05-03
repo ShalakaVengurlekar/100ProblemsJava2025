@@ -1,4 +1,4 @@
-package HundredSums2025.src.Decoration_PRA16;
+package Decoration_PRA16;
 import java.io.*;
 import java.util.*;
 import java.text.*;

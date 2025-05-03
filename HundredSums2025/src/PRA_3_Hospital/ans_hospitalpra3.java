@@ -89,7 +89,7 @@ class Doctor{
     }
 
     ArrayList<String> getUniqueIllnesses(ArrayList<Doctor> docList, int idToFind){
-        HashSet<String> illSet = new HashSet();
+        HashSet<String> illSet = new HashSet<String>();
         for(Doctor d: docList){
             if(d.getDocId()==idToFind){
                 ArrayList<Patient> patientList = d.getPatientList();

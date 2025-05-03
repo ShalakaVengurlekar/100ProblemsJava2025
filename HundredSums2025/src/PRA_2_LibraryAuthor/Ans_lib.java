@@ -1,4 +1,4 @@
-package HundredSums2025.src.LibraryAuthorPRA_2;
+package LibraryAuthorPRA_2;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Collections;

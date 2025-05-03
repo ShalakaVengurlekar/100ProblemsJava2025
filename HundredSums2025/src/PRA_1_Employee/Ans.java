@@ -1,4 +1,4 @@
-package HundredSums2025.src.EmployeePRA_1;
+package EmployeePRA_1;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections; // if you are using Collections.sort()
