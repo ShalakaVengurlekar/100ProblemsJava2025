@@ -1,4 +1,4 @@
-package HospitalPRA_3;
+package PRA_3_Hospital;
 
 import java.util.ArrayList;
 import java.util.Collections;

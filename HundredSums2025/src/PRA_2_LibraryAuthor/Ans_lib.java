@@ -1,4 +1,4 @@
-package LibraryAuthorPRA_2;
+package PRA_2_LibraryAuthor;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Collections;

@@ -1,9 +1,9 @@
-package Decoration_PRA16;
-import java.io.*;
+package PRA_16_Decoration;
+//import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+//import java.text.*;
+//import java.math.*;
+//import java.util.regex.*;
 
 public class IdealCode {
     public static void main(String args[] ) throws Exception {
@@ -47,11 +47,14 @@ public class IdealCode {
                     System.out.println(m);
                 }
             }else{
+                
                 throw new custexception("No Decorations Below Stock Threshold");
+                
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        sc.close();
     }
 }
 

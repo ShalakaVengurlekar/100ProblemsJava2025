@@ -1,4 +1,4 @@
-package EmployeePRA_1;
+package PRA_1_Employee;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections; // if you are using Collections.sort()
